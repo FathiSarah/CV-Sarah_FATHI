@@ -1,0 +1,88 @@
+body {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: rgb(0, 0, 0);
+     height: 100vh;
+}
+
+.container {
+     display: flex;
+     align-items: center;
+     justify-content: flex-end;
+     height: 320px;
+     width: 320px;
+     position: absolute;
+     gap: 20px;
+}
+
+.path {
+     display:flex;
+     height: 1rem;
+     width: 1rem;
+     background-color:  rgb(255, 236, 69);
+     top: 50%;
+     left:0;
+     border-radius: 50%;
+}
+
+.pacman {
+     display: flex;
+     width: 3rem;
+     height: 3rem;
+     background-color:  rgb(255, 236, 69);
+     border-radius: 50%;
+     top: 50%;
+     left:0;
+     position: absolute;
+     transform: translateY(-50%)
+}
+.pacman::before {
+     content: '';
+     position: absolute;
+     top: 50%; 
+     left: 50%; 
+     width: 0;
+     height: 0;
+     border-left: 1rem solid transparent; 
+     border-right: 2rem solid black; 
+     border-top: 1rem solid transparent; 
+     border-bottom: 1rem solid transparent; 
+     transform: rotate(-90deg) translate(-10%, -35%); 
+ }
+ 
+ 
+.modal-content {
+     color: rgb(255, 236, 69);
+     background-color: rgb(0, 0, 0);
+     border-radius: 10px;
+     height: auto;
+     width: auto; 
+     max-width: 600px; 
+     text-align: center;
+     padding: 20px;
+     transition: all 0.3s ease;
+}
+
+#message-modal {
+     display: none;
+     position: fixed;
+     z-index: 1000;
+     left: 0px;
+     top: 250px;
+     width: 100vw;
+     height: 100vh;
+     justify-content: center;
+     align-items: center;
+     display: flex;
+}
+
+button {
+     margin-top: 10px;
+     padding: 10px 20px;
+     background-color: blue;
+     color: white;
+     border: none;
+     border-radius: 5px;
+     cursor: pointer;
+}
