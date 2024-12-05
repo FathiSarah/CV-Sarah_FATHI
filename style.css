@@ -86,3 +86,16 @@ button {
      border-radius: 5px;
      cursor: pointer;
 }
+.path2 img {
+     width: 50vw; /* 50% of the viewport's width */
+     height: 50vw; /* 50% of the viewport's height */
+     display: none; /* Keep it hidden by default */
+     position: fixed; /* Fixed position for centering on the screen */
+     top: 50%; /* Move to 50% from the top of the viewport */
+     left: 50%; /* Move to 50% from the left of the viewport */
+     transform: translate(-50%, -50%); /* Adjust the center point of the image */
+     object-fit: contain; /* Ensure the entire image is visible */
+     z-index: 1000; /* Ensure the image appears above other content */
+}
+
+
